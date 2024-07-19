@@ -17,6 +17,7 @@ GameScene::~GameScene() {
 	}
 	worldTransformBlocks_.clear();
 	delete debugCamera_;
+	delete modelSkydome_;
 }
 	
 
@@ -33,7 +34,7 @@ GameScene::~GameScene() {
 			debugCamera_->GetViewProjection().rotation_,
 			debugCamera_->GetViewProjection().translation_
 		);
-
+		
 		AxisIndicator::GetInstance()->SetVisible(true);
 		AxisIndicator::GetInstance()->SetTargetViewProjection(&debugCamera_->GetViewProjection());
 
@@ -64,6 +65,9 @@ GameScene::~GameScene() {
 
 		viewProjection_.Initialize();
 		modelBlock_ = Model::Create();
+	    modelSkydome_ = Model::CreateFromOBJ("sphere", true);
+	    skydome_ = new Skydome();
+	    skydome_->Initialize(modelSkydome_, &viewProjection_);
 	}
 
 	void GameScene::Update() {
@@ -126,6 +130,7 @@ GameScene::~GameScene() {
 
 		/// <summary>
 		/// ここに3Dオブジェクトの描画処理を追加できる
+	    //modelSkydome_->Draw(worldTransform_, viewProjection_);
 		/// </summary>
 	
 		for (std::vector<WorldTransform*>& worldTransformBlockLine : worldTransformBlocks_) {
@@ -134,6 +139,7 @@ GameScene::~GameScene() {
 			}
 		}
 
+		skydome_->Draw();
 		// 3Dオブジェクト描画後処理
 		Model::PostDraw();
 #pragma endregion
