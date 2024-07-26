@@ -10,6 +10,15 @@
 #include "DebugCamera.h"
 #include <vector>
 #include"skydome.h"
+#include"Audio.h"
+#include"DirectXCommon.h"
+#include"Input.h"
+#include"MapchipField.h"
+#include"Model.h"
+#include"Sprite.h"
+#include"ViewProjection.h"
+#include"WorldTransform.h"
+
 
 /// <summary>
 /// ゲームシーン
@@ -42,6 +51,8 @@ public: // メンバ関数
 	/// </summary>
 	void Draw();
 
+	void GenerateBlocks();
+
 private: // メンバ変数
 	DirectXCommon* dxCommon_ = nullptr;
 	Input* input_ = nullptr;
@@ -60,6 +71,10 @@ private: // メンバ変数
 	Matrix4x4 cameraMarix_;
 	Model* modelBlock_ = nullptr;
 	std::vector<std::vector<WorldTransform*>> worldTransformBlocks_;
+	WorldTransform worldTransformSkydome_;
 	Model* modelSkydome_ = nullptr;
 	Skydome*skydome_=nullptr;
+	MapChipField* mapChipField_;
+
+	//void GenerateBlocks();
 };
