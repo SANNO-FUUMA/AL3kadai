@@ -1,2 +1,235 @@
-﻿  GameScene.cpp
-  DirectXGame.vcxproj -> C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\DirectXGame.exe
+﻿  Easing.cpp
+  main.cpp
+  Player.cpp
+  GameScene.cpp
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Easing.cpp(31,21): error C3861: 'MatrixMultiply': 識別子が見つかりませんでした
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Easing.cpp(76,9): error C3861: 'Lerp': 識別子が見つかりませんでした
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\ratio(21,1): error C2059: 構文エラー: 'namespace' (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\ratio(21,1): error C2143: 構文エラー: ';' が '{' の前にありません。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\ratio(21,1): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?) (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(263,19): error C3861: '_Gcd': 識別子が見つかりませんでした (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(262,31): error C3615: constexpr 関数 'std::_Lcm' を定数式にすることはできません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(264,1): message : コントロールが constexpr 関数の終わりに達したため、エラーが発生しました (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(269,9): error C7568: 想定される関数テンプレート 'ratio' の後に引数リストがありません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(270,2): message : コンパイル対象の クラス テンプレート インスタンス化 'std::common_type<std::chrono::duration<_Rep,_Period>,std::chrono::duration<_Rep2,_Period2>>' のリファレンスを確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(424,21): error C2760: 構文エラー: 'ratio_divide' は予期しないエラーでした。'型指定子' が必要です (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(78,19): message : コンパイラでのこの診断により関数 '_To std::chrono::duration_cast(const std::chrono::duration<_Rep,_Period> &) noexcept(<expr>)' が生成されました。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(510,58): error C2065: 'nano': 定義されていない識別子です。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(510,38): error C2923: 'std::chrono::duration': 'nano' は、パラメーター '_Period' の有効な テンプレート 型引数ではありません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(510,58): message : 'nano' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(511,58): error C2065: 'micro': 定義されていない識別子です。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(511,38): error C2923: 'std::chrono::duration': 'micro' は、パラメーター '_Period' の有効な テンプレート 型引数ではありません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(511,58): message : 'micro' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(512,58): error C2065: 'milli': 定義されていない識別子です。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(512,38): error C2923: 'std::chrono::duration': 'milli' は、パラメーター '_Period' の有効な テンプレート 型引数ではありません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(512,58): message : 'milli' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(71,55): error C7568: 想定される関数テンプレート 'ratio' の後に引数リストがありません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(513,38): error C2976: 'std::chrono::duration': 引数 テンプレート が少なすぎます (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(82,5): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(514,52): error C7568: 想定される関数テンプレート 'ratio' の後に引数リストがありません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(515,52): error C7568: 想定される関数テンプレート 'ratio' の後に引数リストがありません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(517,61): error C7568: 想定される関数テンプレート 'ratio' の後に引数リストがありません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(517,79): error C2955: 'std::chrono::duration': クラス テンプレート を使用するには テンプレート 引数リストが必要です (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(82,5): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(517,46): error C7568: 想定される関数テンプレート 'ratio_multiply' の後に引数リストがありません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(518,61): error C7568: 想定される関数テンプレート 'ratio' の後に引数リストがありません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(518,77): error C2955: 'std::chrono::duration': クラス テンプレート を使用するには テンプレート 引数リストが必要です (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(82,5): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(518,46): error C7568: 想定される関数テンプレート 'ratio_multiply' の後に引数リストがありません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(519,61): error C7568: 想定される関数テンプレート 'ratio' の後に引数リストがありません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(519,87): error C2955: 'std::chrono::duration': クラス テンプレート を使用するには テンプレート 引数リストが必要です (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(82,5): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(519,46): error C7568: 想定される関数テンプレート 'ratio_multiply' の後に引数リストがありません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(520,66): error C2955: 'std::chrono::duration': クラス テンプレート を使用するには テンプレート 引数リストが必要です (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(82,5): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(520,74): error C7568: 想定される関数テンプレート 'ratio' の後に引数リストがありません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(520,46): error C7568: 想定される関数テンプレート 'ratio_divide' の後に引数リストがありません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(637,43): error C7568: 想定される関数テンプレート 'ratio' の後に引数リストがありません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(190,59): error C3203: 'duration': 非特殊 クラス テンプレート は、テンプレート 引数として テンプレート パラメーター '_Duration' に使用できません。実際の型を指定してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(195,35): error C2825: '_Duration': '::' が後に続くときは、クラスまたは名前空間でなければなりません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(642): message : コンパイル対象の クラス テンプレート インスタンス化 'std::chrono::time_point<std::chrono::system_clock,int>' のリファレンスを確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(195,46): error C2510: '_Duration': スコープ解決演算子 '::' の左側の識別子名は、クラス、構造体、共用体のいずれでもありません。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(195,1): error C2061: 構文エラー: 識別子 'rep' (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(196,35): error C2825: '_Duration': '::' が後に続くときは、クラスまたは名前空間でなければなりません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(196,46): error C2510: '_Duration': スコープ解決演算子 '::' の左側の識別子名は、クラス、構造体、共用体のいずれでもありません。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(196,1): error C2061: 構文エラー: 識別子 'period' (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(198,23): error C2338: static_assert failed: 'N4885 [time.point.general]/1 mandates Duration to be a specialization of chrono::duration.' (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(643,39): error C2641: 'std::chrono::duration' のテンプレート引数を推測できません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(643,1): error C2783: 'std::chrono::duration<_Rep,_Period> std::chrono::duration(const _Rep2 &) noexcept(<expr>)': '_Rep' の テンプレート 引数を推測できませんでした (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(97,9): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(643,39): error C2780: 'std::chrono::duration<_Rep,_Period> std::chrono::duration(void)': 0 引数が必要です - 1 が指定されました (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(91,9): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(643,39): error C2784: 'std::chrono::duration<_Rep,_Period> std::chrono::duration(std::chrono::duration<_Rep,_Period>)': 'std::chrono::duration<_Rep,_Period>' の テンプレート 引数を '__int64' から推測できませんでした (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(82,5): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(251,26): error C2825: 'std::chrono::time_point<std::chrono::system_clock,int>::duration': '::' が後に続くときは、クラスまたは名前空間でなければなりません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(643,30): message : 関数 'std::chrono::time_point<std::chrono::system_clock,int>::time_point(void)' のリファレンスをご覧ください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(251,36): error C2510: 'duration': スコープ解決演算子 '::' の左側の識別子名は、クラス、構造体、共用体のいずれでもありません。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(643,30): message : 関数 'std::chrono::time_point<std::chrono::system_clock,int>::time_point(void)' のリファレンスをご覧ください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(251): error C3861: 'zero': 識別子が見つかりませんでした (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(643,30): message : 関数 'std::chrono::time_point<std::chrono::system_clock,int>::time_point(void)' のリファレンスをご覧ください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(211,90): error C2065: 'rep': 定義されていない識別子です。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(647,20): error C2672: 'std::chrono::duration_cast': 一致するオーバーロードされた関数が見つかりませんでした。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(78,19): message : '_To std::chrono::duration_cast(const std::chrono::duration<_Rep,_Period> &) noexcept(<expr>)' の可能性があります (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(647,34): message : 'std::chrono::duration_cast': テンプレート 引数は '_To' に対して無効です。テンプレート 引数リストがクラス テンプレート 'std::chrono::duration' に存在しません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(651,38): error C2641: 'std::chrono::duration' のテンプレート引数を推測できません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(651,1): error C2783: 'std::chrono::duration<_Rep,_Period> std::chrono::duration(const _Rep2 &) noexcept(<expr>)': '_Rep' の テンプレート 引数を推測できませんでした (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(97,9): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(651,38): error C2780: 'std::chrono::duration<_Rep,_Period> std::chrono::duration(void)': 0 引数が必要です - 1 が指定されました (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(91,9): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(651,38): error C2784: 'std::chrono::duration<_Rep,_Period> std::chrono::duration(std::chrono::duration<_Rep,_Period>)': 'std::chrono::duration<_Rep,_Period>' の テンプレート 引数を '__time64_t' から推測できませんでした (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(82,5): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(658,46): error C3203: 'duration': 非特殊 クラス テンプレート は、テンプレート 引数として テンプレート パラメーター '_Duration' に使用できません。実際の型を指定してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(659,46): error C3203: 'duration': 非特殊 クラス テンプレート は、テンプレート 引数として テンプレート パラメーター '_Duration' に使用できません。実際の型を指定してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(664,43): error C2061: 構文エラー: 識別子 'nano' (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(672,27): error C2653: 'period': 識別子がクラス名でも名前空間名でもありません。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(672,35): error C2065: 'num': 定義されていない識別子です。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(678,31): error C2653: 'period': 識別子がクラス名でも名前空間名でもありません。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(678,39): error C2065: 'den': 定義されていない識別子です。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(679,51): error C2653: 'period': 識別子がクラス名でも名前空間名でもありません。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(679,59): error C2065: 'den': 定義されていない識別子です。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(679,37): error C2737: '_Multiplier': constexpr オブジェクトを初期化する必要があります (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(680,43): error C2641: 'std::chrono::duration' のテンプレート引数を推測できません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(680,1): error C2783: 'std::chrono::duration<_Rep,_Period> std::chrono::duration(const _Rep2 &) noexcept(<expr>)': '_Rep' の テンプレート 引数を推測できませんでした (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(97,9): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(680,43): error C2780: 'std::chrono::duration<_Rep,_Period> std::chrono::duration(void)': 0 引数が必要です - 1 が指定されました (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(91,9): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(680,43): error C2784: 'std::chrono::duration<_Rep,_Period> std::chrono::duration(std::chrono::duration<_Rep,_Period>)': 'std::chrono::duration<_Rep,_Period>' の テンプレート 引数を '__int64' から推測できませんでした (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(82,5): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(251,26): error C2825: 'std::chrono::time_point<std::chrono::steady_clock,int>::duration': '::' が後に続くときは、クラスまたは名前空間でなければなりません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(680,34): message : 関数 'std::chrono::time_point<std::chrono::steady_clock,int>::time_point(void)' のリファレンスをご覧ください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(687,59): error C2653: 'period': 識別子がクラス名でも名前空間名でもありません。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(687,67): error C2065: 'den': 定義されていない識別子です。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(687,33): error C2737: '_Whole': const オブジェクトを初期化する必要があります (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(688,59): error C2653: 'period': 識別子がクラス名でも名前空間名でもありません。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(688,67): error C2065: 'den': 定義されていない識別子です。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(688,33): error C2737: '_Part': const オブジェクトを初期化する必要があります (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(689,43): error C2641: 'std::chrono::duration' のテンプレート引数を推測できません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(689,1): error C2783: 'std::chrono::duration<_Rep,_Period> std::chrono::duration(const _Rep2 &) noexcept(<expr>)': '_Rep' の テンプレート 引数を推測できませんでした (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(97,9): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(689,43): error C2780: 'std::chrono::duration<_Rep,_Period> std::chrono::duration(void)': 0 引数が必要です - 1 が指定されました (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(91,9): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(689,43): error C2784: 'std::chrono::duration<_Rep,_Period> std::chrono::duration(std::chrono::duration<_Rep,_Period>)': 'std::chrono::duration<_Rep,_Period>' の テンプレート 引数を '__int64' から推測できませんでした (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(82,5): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(704,58): error C2641: 'std::chrono::duration' のテンプレート引数を推測できません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(719,1): error C2783: 'std::chrono::duration<_Rep,_Period> std::chrono::duration(const _Rep2 &) noexcept(<expr>)': '_Rep' の テンプレート 引数を推測できませんでした (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(97,9): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(704,58): error C2780: 'std::chrono::duration<_Rep,_Period> std::chrono::duration(void)': 0 引数が必要です - 1 が指定されました (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(91,9): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(704,58): error C2784: 'std::chrono::duration<_Rep,_Period> std::chrono::duration(std::chrono::duration<_Rep,_Period>)': 'std::chrono::duration<_Rep,_Period>' の テンプレート 引数を 'int' から推測できませんでした (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(82,5): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(724,28): error C2955: 'std::chrono::duration': クラス テンプレート を使用するには テンプレート 引数リストが必要です (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(82,5): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(723,56): error C2079: 'std::literals::chrono_literals::operator ""h' が 未定義の class 'std::chrono::duration' で使用しています。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(725,33): error C2641: 'std::chrono::duration' のテンプレート引数を推測できません (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(725,38): error C2783: 'std::chrono::duration<_Rep,_Period> std::chrono::duration(const _Rep2 &) noexcept(<expr>)': '_Rep' の テンプレート 引数を推測できませんでした (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(97,9): message : 'std::chrono::duration' の宣言を確認してください (ソース ファイルをコンパイルしています Player.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\__msvc_chrono.hpp(725,38): fatal  error C1003: プログラム内のエラーが 100 個を超えました。コンパイルは中断されます。 (ソース ファイルをコンパイルしています Player.cpp)
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.h(27,1): error C2236: 予期しないトークン 'class' です。';' が入力されていることを確認してください。 (ソース ファイルをコンパイルしています scene\GameScene.cpp)
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.h(27,17): error C2059: 構文エラー: '{' (ソース ファイルをコンパイルしています scene\GameScene.cpp)
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.h(27,17): error C2143: 構文エラー: ';' が '{' の前にありません。 (ソース ファイルをコンパイルしています scene\GameScene.cpp)
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.h(27,17): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?) (ソース ファイルをコンパイルしています scene\GameScene.cpp)
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.h(27,1): error C2236: 予期しないトークン 'class' です。';' が入力されていることを確認してください。 (ソース ファイルをコンパイルしています main.cpp)
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.h(27,17): error C2059: 構文エラー: '{' (ソース ファイルをコンパイルしています main.cpp)
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.h(27,17): error C2143: 構文エラー: ';' が '{' の前にありません。 (ソース ファイルをコンパイルしています main.cpp)
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.h(27,17): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?) (ソース ファイルをコンパイルしています main.cpp)
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\main.cpp(19,2): error C2065: 'GameScene': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\main.cpp(19,13): error C2065: 'gameScene': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\main.cpp(61,2): error C2065: 'gameScene': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\main.cpp(61,18): error C2061: 構文エラー: 識別子 'GameScene'
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\main.cpp(62,2): error C2065: 'gameScene': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\main.cpp(76,3): error C2065: 'gameScene': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\main.cpp(85,3): error C2065: 'gameScene': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\main.cpp(97,9): error C2065: 'gameScene': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\main.cpp(97,18): error C2541: 'delete': ポインターではないオブジェクトを削除することはできません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(7,1): error C2653: 'GameScene': 識別子がクラス名でも名前空間名でもありません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(7,24): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(7,25): warning C4508: 'GameScene': 関数に戻り値の型が指定されていません。戻り値を void 型と見なします。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(9,1): error C2653: 'GameScene': 識別子がクラス名でも名前空間名でもありません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(9,25): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(9,22): error C2084: 関数 'int GameScene(void)' は既に本体を持っています。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(7,12): message : 'GameScene' の以前の定義を確認してください
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(11,9): error C2065: 'modelBlock_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(11,20): error C2541: 'delete': ポインターではないオブジェクトを削除することはできません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(13,63): error C2065: 'worldTransformBlocks_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(13,2): error C2530: 'worldTransformBlockLine': 参照が初期化されずに宣言されています。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(13,61): error C2143: 構文エラー: ';' が ':' の前にありません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(13,84): error C2143: 構文エラー: ';' が ')' の前にありません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(18,2): error C2065: 'worldTransformBlocks_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(19,9): error C2065: 'modelPlayer_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(19,21): error C2541: 'delete': ポインターではないオブジェクトを削除することはできません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(20,9): error C2065: 'debugCamera_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(20,21): error C2541: 'delete': ポインターではないオブジェクトを削除することはできません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(21,9): error C2065: 'modelSkydome_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(21,22): error C2541: 'delete': ポインターではないオブジェクトを削除することはできません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(22,9): error C2065: 'mapChipField_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(22,22): error C2541: 'delete': ポインターではないオブジェクトを削除することはできません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(26,7): error C2653: 'GameScene': 識別子がクラス名でも名前空間名でもありません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(28,3): error C2065: 'dxCommon_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(29,3): error C2065: 'input_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(30,3): error C2065: 'audio_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(33,3): error C2065: 'debugCamera_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(34,3): error C2065: 'cameraMarix_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(36,4): error C2065: 'debugCamera_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(37,4): error C2065: 'debugCamera_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(34,30): error C2660: 'MatrixMath::MakeAffineMatrix': 関数に 1 個の引数を指定できません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Math\MyMath\MatrixMath.h(48,19): message : 'MatrixMath::MakeAffineMatrix' の宣言を確認してください (ソース ファイルをコンパイルしています scene\GameScene.cpp)
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(34,30): message : 引数リスト '(initializer list)' を一致させようとしているとき
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(43,58): error C2065: 'debugCamera_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(52,3): error C2065: 'worldTransformBlocks_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(54,4): error C2065: 'worldTransformBlocks_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(61,6): error C2065: 'worldTransformBlocks_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(62,6): error C2065: 'worldTransformBlocks_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(64,7): error C2065: 'worldTransformBlocks_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(65,7): error C2065: 'worldTransformBlocks_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(70,3): error C2065: 'viewProjection_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(71,6): error C2065: 'modelBlock_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(72,6): error C2065: 'modelSkydome_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(73,6): error C2065: 'modelPlayer_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(74,6): error C2065: 'skydome_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(75,6): error C2065: 'skydome_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(75,27): error C2065: 'modelSkydome_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(75,43): error C2065: 'viewProjection_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(76,6): error C2065: 'mapChipField_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(77,6): error C2065: 'mapChipField_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(78,6): error C2065: 'player_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(79,30): error C2065: 'mapChipField_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(80,6): error C2065: 'player_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(80,26): error C2065: 'modelPlayer_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(80,56): error C2065: 'viewProjection_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(81,6): error C3861: 'GenerateBlocks': 識別子が見つかりませんでした
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(87,7): error C2653: 'GameScene': 識別子がクラス名でも名前空間名でもありません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(91,64): error C2065: 'worldTransformBlocks_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(91,3): error C2530: 'worldTransformBlockLine': 参照が初期化されずに宣言されています。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(91,62): error C2143: 構文エラー: ';' が ':' の前にありません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(91,85): error C2143: 構文エラー: ';' が ')' の前にありません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(102,7): error C2065: 'input_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(103,4): error C2065: 'isDebugCameraActive_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(108,7): error C2065: 'isDebugCameraActive_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(108,31): warning C4805: '==': 演算中の 'unknown-type' 型と 'bool' 型の混用は安全ではありません
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(109,4): error C2065: 'debugCamera_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(110,4): error C2065: 'viewProjection_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(110,30): error C2065: 'debugCamera_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(111,4): error C2065: 'viewProjection_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(111,36): error C2065: 'debugCamera_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(112,4): error C2065: 'viewProjection_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(115,4): error C2065: 'viewProjection_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(122,7): error C2653: 'GameScene': 識別子がクラス名でも名前空間名でもありません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(125,47): error C2065: 'dxCommon_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(138,6): error C2065: 'dxCommon_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(151,67): error C2065: 'worldTransformBlocks_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(151,6): error C2530: 'worldTransformBlockLine': 参照が初期化されずに宣言されています。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(151,65): error C2143: 構文エラー: ';' が ':' の前にありません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(151,88): error C2143: 構文エラー: ';' が ')' の前にありません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(155,8): error C2065: 'modelBlock_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(155,48): error C2065: 'viewProjection_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(159,6): error C2065: 'skydome_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(171,6): error C2065: 'player_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(177,7): error C2653: 'GameScene': 識別子がクラス名でも名前空間名でもありません。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(178,36): error C2065: 'mapChipField_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(179,37): error C2065: 'mapChipField_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(182,5): error C2065: 'worldTransformBlocks_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(184,7): error C2065: 'worldTransformBlocks_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(189,12): error C2065: 'mapChipField_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(192,9): error C2065: 'worldTransformBlocks_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(194,6): error C2065: 'worldTransformBlocks_': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(194,50): error C2065: 'mapChipField_': 定義されていない識別子です。

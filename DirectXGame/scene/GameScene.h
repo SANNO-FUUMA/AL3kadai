@@ -18,6 +18,7 @@
 #include"Sprite.h"
 #include"ViewProjection.h"
 #include"WorldTransform.h"
+#include"Player.h"
 
 
 /// <summary>
@@ -61,6 +62,7 @@ private: // メンバ変数
 	/// <summary>
 	/// ゲームシーン用
 	/// </summary>
+	Player* player_ = nullptr;
 	
 	ViewProjection viewProjection_;
 	WorldTransform worldTransform_;
@@ -70,11 +72,13 @@ private: // メンバ変数
 	DebugCamera* debugCamera_ = nullptr;
 	Matrix4x4 cameraMarix_;
 	Model* modelBlock_ = nullptr;
+	Model* modelPlayer_ = nullptr;
 	std::vector<std::vector<WorldTransform*>> worldTransformBlocks_;
 	WorldTransform worldTransformSkydome_;
 	Model* modelSkydome_ = nullptr;
 	Skydome*skydome_=nullptr;
 	MapChipField* mapChipField_;
+
 
 	//void GenerateBlocks();
 };

@@ -16,6 +16,7 @@ GameScene::~GameScene() {
 		}
 	}
 	worldTransformBlocks_.clear();
+	delete modelPlayer_;
 	delete debugCamera_;
 	delete modelSkydome_;
 	delete mapChipField_;
@@ -69,10 +70,14 @@ GameScene::~GameScene() {
 		viewProjection_.Initialize();
 	    modelBlock_ = Model::CreateFromOBJ("block");
 	    modelSkydome_ = Model::CreateFromOBJ("sphere", true);
+	    modelPlayer_ = Model::CreateFromOBJ("player ",true);
 	    skydome_ = new Skydome();
 	    skydome_->Initialize(modelSkydome_, &viewProjection_);
 	    mapChipField_ = new MapChipField;
 	    mapChipField_->LoadMapChipCsv("Resources/map.csv");
+	    player_ = new Player();
+	    Vector3 playerpositon = mapChipField_->GetMapChipPositionByIndex(1, 19);
+	    player_->Initialize(modelPlayer_, playerpositon, &viewProjection_);
 	    GenerateBlocks();
 		
 	}
@@ -142,6 +147,7 @@ GameScene::~GameScene() {
 	    // modelSkydome_->Draw(worldTransform_, viewProjection_);
 	    /// </summary>
 
+
 	    for (std::vector<WorldTransform*>& worldTransformBlockLine : worldTransformBlocks_) {
 		    for (WorldTransform* worldTransformBlock : worldTransformBlockLine) {
 			    if (!worldTransformBlock)
@@ -162,7 +168,7 @@ GameScene::~GameScene() {
 	    /// <summary>
 	    /// ここに前景スプライトの描画処理を追加できる
 	    /// </summary>
-
+	    player_->Draw();
 	    // スプライト描画後処理
 	    Sprite::PostDraw();
     }
