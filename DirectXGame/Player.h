@@ -3,9 +3,7 @@
 #include "Model.h"
 #include "ViewProjection.h"
 #include "WorldTransform.h"
-
 class MapChipField;
-
 
 class Player {
 public:
@@ -14,7 +12,6 @@ public:
 		kLeft,
 	};
 
-	// 角
 	enum Corner {
 		kRightBottom, 
 		kLeftBottom,  
@@ -49,7 +46,7 @@ private:
 	static inline const float kHeight = 0.8f;
 	static inline const float kBlank = 0.04f;
 	static inline const float kGroundSearchHeight = 0.06f;
-
+	
 	struct CollisionMapInfo {
 		bool ceiling = false;
 		bool landing = false;
@@ -62,7 +59,6 @@ private:
 	ViewProjection* viewProjection_ = nullptr;
 	Vector3 velocity_ = {};
 	bool onGround_ = true;
-
 	LRDirection lrDirection_ = LRDirection::kRight;
 	float turnFirstRotationY_ = 0.0f;
 	float turnTimer_ = 0.0f;

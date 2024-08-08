@@ -5,6 +5,7 @@ class Player;
 class CameraController {
 
 public:
+
 	struct Rect {
 		float left = 0.0f;   
 		float right = 1.0f;  
@@ -16,6 +17,7 @@ public:
 	};
         
 	void Initialize();
+
 	void Update();
 
 	void SetTarget(Player* target) { target_ = target; }
@@ -27,8 +29,10 @@ public:
 	float Lerp(float x1, float x2, float t) { return (1.0f - t) * x1 + t * x2; }
 
 private:
+
 	ViewProjection viewProjection_;
 	Player* target_ = nullptr;
+
 	Vector3 targetOffset_ = {0, 0, -30.0f};
 	Rect movableArea_ = {0, 300, 0, 300};
 	Vector3 destination_;

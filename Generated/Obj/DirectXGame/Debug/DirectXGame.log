@@ -1,4 +1,6 @@
-﻿  Skydome.cpp
+﻿  CameraController.cpp
+  Player.cpp
+  Skydome.cpp
   main.cpp
   GameScene.cpp
   DirectXGame.vcxproj -> C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\DirectXGame.exe

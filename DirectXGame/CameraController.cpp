@@ -5,7 +5,6 @@
 void CameraController::Initialize() { viewProjection_.Initialize(); }
 
 void CameraController::Update() {
-
 	const WorldTransform& targetWorldTransform = target_->GetWorldTransform();
 	Vector3 targetVelocity = target_->GetVelocity();
 
