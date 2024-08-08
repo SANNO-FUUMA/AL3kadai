@@ -5,7 +5,6 @@
 class Easing {
 public:
 
-
 	static float Liner(float startPos, float endPos, float easedT) {
 		return (1.0f - easedT) * startPos + easedT * endPos;
 	}

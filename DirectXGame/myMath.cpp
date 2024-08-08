@@ -1,7 +1,5 @@
 #include "myMath.h"
 #include <cmath>
-
-
 Matrix4x4 MakeAffineMatrix(const Vector3& scale, const Vector3& rot, const Vector3& translate){
 
     Matrix4x4 ScallMat,
@@ -9,13 +7,12 @@ Matrix4x4 MakeAffineMatrix(const Vector3& scale, const Vector3& rot, const Vecto
               TranslateMat,
               returnMat;
 
-    // スケール行列作成
+
     ScallMat = {scale.x, 0, 0, 0,
                 0, scale.y, 0, 0,
                 0, 0, scale.z, 0,
                 0, 0, 0, 1};
 
-    // XYZ回転行列作成
     RotateMatX = {1, 0, 0, 0,
                   0, cosf(rot.x), sinf(rot.x), 0,
                   0,-sinf(rot.x), cosf(rot.x), 0,
@@ -31,25 +28,23 @@ Matrix4x4 MakeAffineMatrix(const Vector3& scale, const Vector3& rot, const Vecto
                   0, 0, 1, 0,
                   0, 0, 0, 1};
 
-    // XYZ回転行列の合成(Z*X*Y)
+
     RotateMat = MatrixMultiply(RotateMatZ, RotateMatX);
-    // ↑の結果＊Y軸回転
+
     RotateMat = MatrixMultiply(RotateMat, RotateMatY);
 
-    // 平行移動行列作成
+
     TranslateMat = {1, 0, 0, 0,
                     0, 1, 0, 0,
                     0, 0, 1, 0,
                     translate.x, translate.y, translate.z, 1};
 
-    // スケール＊回転＊平行移動をワールド変換行列に
+
     returnMat = MatrixMultiply(ScallMat, RotateMat);
     returnMat = MatrixMultiply(returnMat, TranslateMat);
 
     return returnMat;
 }
-
-// 行列の掛け算
 Matrix4x4 MatrixMultiply(Matrix4x4& m1, Matrix4x4& m2) {
 
     Matrix4x4 result;

@@ -1,3 +1,7 @@
-﻿Player.obj : error LNK2019: 未解決の外部シンボル "public: void __cdecl WorldTransform::UpdateMatrix(void)" (?UpdateMatrix@WorldTransform@@QEAAXXZ) が関数 "public: void __cdecl Player::Update(void)" (?Update@Player@@QEAAXXZ) で参照されました
-GameScene.obj : error LNK2001: 外部シンボル "public: void __cdecl WorldTransform::UpdateMatrix(void)" (?UpdateMatrix@WorldTransform@@QEAAXXZ) は未解決です
-C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\..\Generated\Outputs\Debug\DirectXGame.exe : fatal error LNK1120: 1 件の未解決の外部参照
+﻿  MapChipField.cpp
+  Player.cpp
+  Skydome.cpp
+  main.cpp
+  myMath.cpp
+  GameScene.cpp
+  DirectXGame.vcxproj -> C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\DirectXGame.exe
