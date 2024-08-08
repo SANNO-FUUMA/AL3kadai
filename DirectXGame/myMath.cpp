@@ -27,15 +27,13 @@ Matrix4x4 MakeAffineMatrix(const Vector3& scale, const Vector3& rot, const Vecto
                  -sinf(rot.z), cosf(rot.z), 0, 0,
                   0, 0, 1, 0,
                   0, 0, 0, 1};
+
     RotateMat = MatrixMultiply(RotateMatZ, RotateMatX);
-
     RotateMat = MatrixMultiply(RotateMat, RotateMatY);
-
     TranslateMat = {1, 0, 0, 0,
                     0, 1, 0, 0,
                     0, 0, 1, 0,
                     translate.x, translate.y, translate.z, 1};
-
     returnMat = MatrixMultiply(ScallMat, RotateMat);
     returnMat = MatrixMultiply(returnMat, TranslateMat);
 

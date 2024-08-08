@@ -22,10 +22,10 @@ void MapChipField::ResetMapChipData() {
 
 void MapChipField::LoadMapChipCsv(const std::string& filePath) {
 	ResetMapChipData();
+
 	std::ifstream file;
 	file.open(filePath);
 	assert(file.is_open());
-
 	std::stringstream mapChipCsv;
 	mapChipCsv << file.rdbuf();
 	file.close();
@@ -77,6 +77,7 @@ MapChipField::IndexSet MapChipField::GetMapChipIndexSetByPosition(const Vector3&
 }
 
 MapChipField::Rect MapChipField::GetRectByIndex(uint32_t xIndex, uint32_t yIndex) {
+
 	Vector3 center = GetMapChipPositionByIndex(xIndex, yIndex);
 
 	Rect rect;

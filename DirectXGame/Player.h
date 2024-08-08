@@ -6,14 +6,15 @@
 
 class MapChipField;
 
+
 class Player {
 public:
-	
 	enum class LRDirection {
 		kRight,
 		kLeft,
 	};
 
+	// 角
 	enum Corner {
 		kRightBottom, 
 		kLeftBottom,  
@@ -22,6 +23,7 @@ public:
 
 		kNumCorner 
 	};
+
 	void Initialize(Model* model, ViewProjection* viewProjection, const Vector3& position);
 
 	void Update();
@@ -29,6 +31,7 @@ public:
 	void Draw();
 
 	void SetMapChipField(MapChipField* mapChipField) { mapChipField_ = mapChipField; }
+
 	const WorldTransform& GetWorldTransform() const { return worldTransform_; }
 	const Vector3& GetVelocity() const { return velocity_; }
 
@@ -59,6 +62,7 @@ private:
 	ViewProjection* viewProjection_ = nullptr;
 	Vector3 velocity_ = {};
 	bool onGround_ = true;
+
 	LRDirection lrDirection_ = LRDirection::kRight;
 	float turnFirstRotationY_ = 0.0f;
 	float turnTimer_ = 0.0f;

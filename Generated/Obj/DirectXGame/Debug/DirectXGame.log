@@ -1,9 +1,4 @@
-﻿  CameraController.cpp
-  MapChipField.cpp
-  Player.cpp
-  Skydome.cpp
-  WorldTransform (1).cpp
+﻿  Skydome.cpp
   main.cpp
-  myMath.cpp
   GameScene.cpp
   DirectXGame.vcxproj -> C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\DirectXGame.exe
