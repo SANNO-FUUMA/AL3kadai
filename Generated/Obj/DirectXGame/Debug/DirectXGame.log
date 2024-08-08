@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ﻿  compilation object save succeeded; see C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\TerrainPS.cso
   compilation object save succeeded; see C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\TerrainVS.cso
   compilation object save succeeded; see C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\ObjPS.cso
@@ -14,5 +15,48 @@
   WinApp.cpp
   main.cpp
   MatrixMath.cpp
+=======
+﻿  MapChipField.cpp
+  Player.cpp
+>>>>>>> Stashed changes
   GameScene.cpp
-  DirectXGame.vcxproj -> C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\DirectXGame.exe
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\MapChipField.cpp(11,24): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\MapChipField.cpp(11,30): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(155,34): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(155): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(155,76): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(155,82): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(161,34): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(161): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(161,76): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(161,82): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(200,34): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(200): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(200,76): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(200,82): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(206,34): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(206): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(206,76): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(206,82): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(244,34): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(244): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(244,76): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(244,82): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(250,34): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(250): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(250,76): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(250,82): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(288,34): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(288): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(288,76): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(288,82): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(294,34): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(294): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(294,76): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(294,82): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(333,36): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(333,42): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(340,36): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\Player.cpp(340,42): error C2065: 'kBlock': 定義されていない識別子です。
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(108,67): error C2838: 'kBlock': メンバー宣言内の限定名が間違っています
+C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\DirectXGame\scene\GameScene.cpp(108,73): error C2065: 'kBlock': 定義されていない識別子です。

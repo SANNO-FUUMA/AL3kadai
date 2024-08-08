@@ -20,7 +20,11 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 	// ゲームウィンドウの作成
 	win = WinApp::GetInstance();
+<<<<<<< Updated upstream
 	win->CreateGameWindow(L"AL3_0202");
+=======
+	win->CreateGameWindow(L"GC2D_04_キタムラ_ケンタ_AL3");
+>>>>>>> Stashed changes
 
 	// DirectX初期化処理
 	dxCommon = DirectXCommon::GetInstance();

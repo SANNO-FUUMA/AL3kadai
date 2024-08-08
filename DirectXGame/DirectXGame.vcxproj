@@ -107,7 +107,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2d\ImGuiManager.cpp" />
+<<<<<<< Updated upstream
     <ClCompile Include="3d\WorldTransform.cpp" />
+=======
+    <ClCompile Include="AABB.cpp" />
+>>>>>>> Stashed changes
     <ClCompile Include="base\DirectXCommon.cpp" />
     <ClCompile Include="base\WinApp.cpp" />
     <ClCompile Include="main.cpp" />
@@ -132,6 +136,7 @@
     <ClInclude Include="3d\TerrainCommon.h" />
     <ClInclude Include="3d\ViewProjection.h" />
     <ClInclude Include="3d\WorldTransform.h" />
+    <ClInclude Include="AABB.h" />
     <ClInclude Include="audio\Audio.h" />
     <ClInclude Include="base\DirectXCommon.h" />
     <ClInclude Include="base\SafeDelete.h" />
