@@ -10,5 +10,6 @@ void Skydome::Initialize(Model* model, ViewProjection* viewProjection) {
 void Skydome::Update() {}
 
 void Skydome::Draw() {
+
 	model_->Draw(worldTransform_, *viewProjection_);
 }

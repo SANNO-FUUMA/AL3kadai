@@ -25,7 +25,6 @@ void CameraController::Update() {
 	viewProjection_.translation_.x = std::clamp(
 	    viewProjection_.translation_.x, targetWorldTransform.translation_.x + targetMargin.left,
 	    targetWorldTransform.translation_.x + targetMargin.right);
-
 	viewProjection_.translation_.y = std::clamp(
 	    viewProjection_.translation_.y, targetWorldTransform.translation_.y + targetMargin.bottom,
 	    targetWorldTransform.translation_.y + targetMargin.top);
