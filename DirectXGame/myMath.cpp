@@ -5,22 +5,16 @@
 
 Matrix4x4 MakeAffineMatrix(const Vector3& scale, const Vector3& rot, const Vector3& translate) {
 	Matrix4x4 ScallMat, RotateMat, RotateMatX, RotateMatY, RotateMatZ, TranslateMat, returnMat;
-	
 	ScallMat = {scale.x, 0, 0, 0, 0, scale.y, 0, 0, 0, 0, scale.z, 0, 0, 0, 0, 1};
-
 	RotateMatX = {1, 0, 0, 0, 0, cosf(rot.x), sinf(rot.x), 0, 0, -sinf(rot.x), cosf(rot.x),
 	              0, 0, 0, 0, 1};
 	RotateMatY = {cosf(rot.y), 0, -sinf(rot.y), 0, 0, 1, 0, 0,
 	              sinf(rot.y), 0, cosf(rot.y),  0, 0, 0, 0, 1};
 	RotateMatZ = {cosf(rot.z), sinf(rot.z), 0, 0, -sinf(rot.z), cosf(rot.z), 0, 0, 0, 0, 1, 0,
 	              0,           0,           0, 1};
-
 	RotateMat = Multiply(RotateMatZ, RotateMatX);
-	
 	RotateMat = Multiply(RotateMat, RotateMatY);
-
 	TranslateMat = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, translate.x, translate.y, translate.z, 1};
-
 	returnMat = Multiply(ScallMat, RotateMat);
 	returnMat = Multiply(returnMat, TranslateMat);
 
@@ -159,7 +153,6 @@ Vector3 Transform(const Vector3& vector, const Matrix4x4& matrix) {
 
 	float w = vector.x * matrix.m[0][3] + vector.y * matrix.m[1][3] + vector.z * matrix.m[2][3] +
 	          1.0f * matrix.m[3][3];
-
 	result.x /= w;
 	result.y /= w;
 	result.z /= w;

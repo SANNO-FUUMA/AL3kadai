@@ -18,7 +18,6 @@ public:
 
 	void Draw();
 
-
 	Vector3 GetWorldPosition();
 
 	AABB GetAABB();

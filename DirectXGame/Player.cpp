@@ -15,10 +15,8 @@ void Player::Initialize(Model* model, ViewProjection* viewProjection, const Vect
 	assert(model);
 
 	model_ = model;
-	
 	worldTransform_.Initialize();
 	worldTransform_.translation_ = position;
-	
 	worldTransform_.rotation_.y = std::numbers::pi_v<float> / 2.0f;
 
 	viewProjection_ = viewProjection;
@@ -26,9 +24,7 @@ void Player::Initialize(Model* model, ViewProjection* viewProjection, const Vect
 
 void Player::Update() {
 
-	
 	InputMove();
-
 
 	CollisionMapInfo collisionMapInfo = {};
 	collisionMapInfo.move = velocity_;
@@ -37,9 +33,7 @@ void Player::Update() {
 
 	CheckMapCollision(collisionMapInfo);
 
-
 	worldTransform_.translation_ += collisionMapInfo.move;
-
 
 	if (collisionMapInfo.ceiling) {
 		velocity_.y = 0;
@@ -48,12 +42,10 @@ void Player::Update() {
 		velocity_.x *= (1.0f - kAttenuationWall);
 	}
 
-
 	UpdateOnGround(collisionMapInfo);
 
 	AnimateTurn();
 
-	
 	worldTransform_.UpdateMatrix();
 }
 
@@ -64,7 +56,6 @@ void Player::Draw() {
 
 Vector3 Player::GetWorldPosition() {
 	Vector3 worldPos;
-
 	worldPos.x = worldTransform_.matWorld_.m[3][0];
 	worldPos.y = worldTransform_.matWorld_.m[3][1];
 	worldPos.z = worldTransform_.matWorld_.m[3][2];
@@ -86,18 +77,19 @@ AABB Player::GetAABB() {
 
 void Player::OnCollision(const Enemy* enemy) {
 	(void)enemy;
-	
 	isDead_ = true;
 }
 
 void Player::InputMove() {
 	if (onGround_) {
 		if (Input::GetInstance()->PushKey(DIK_RIGHT) || Input::GetInstance()->PushKey(DIK_LEFT)) {
+
 			Vector3 acceleration = {};
 			if (Input::GetInstance()->PushKey(DIK_RIGHT)) {
 				if (velocity_.x < 0.0f) {
 					velocity_.x *= (1.0f - kAttenuation);
 				}
+
 				acceleration.x += kAcceleration / 60.0f;
 
 				if (lrDirection_ != LRDirection::kRight) {
@@ -106,7 +98,6 @@ void Player::InputMove() {
 					turnTimer_ = kTimeTurn;
 				}
 			} else if (Input::GetInstance()->PushKey(DIK_LEFT)) {
-
 				if (velocity_.x > 0.0f) {
 					velocity_.x *= (1.0f - kAttenuation);
 				}
@@ -115,7 +106,6 @@ void Player::InputMove() {
 
 				if (lrDirection_ != LRDirection::kLeft) {
 					lrDirection_ = LRDirection::kLeft;
-
 					turnFirstRotationY_ = worldTransform_.rotation_.y;
 					turnTimer_ = kTimeTurn;
 				}
@@ -263,6 +253,7 @@ void Player::CheckMapCollisionRight(CollisionMapInfo& info) {
 	if (mapChipType == MapChipType::kBlock && mapChipTypeNext != MapChipType::kBlock) {
 		hit = true;
 	}
+
 	if (hit) {
 		MapChipField::IndexSet indexSetNow;
 		indexSetNow = mapChipField_->GetMapChipIndexSetByPosition(
@@ -338,7 +329,6 @@ void Player::UpdateOnGround(const CollisionMapInfo& info) {
 			bool ground = false;
 
 			MapChipType mapChipType;
-		
 			MapChipField::IndexSet indexSet;
 
 			indexSet = mapChipField_->GetMapChipIndexSetByPosition(
@@ -375,6 +365,7 @@ void Player::UpdateOnGround(const CollisionMapInfo& info) {
 void Player::AnimateTurn() {
 	if (turnTimer_ > 0.0f) {
 		turnTimer_ = std::max(turnTimer_ - (1.0f / 60.0f), 0.0f);
+
 		float destinationRotationYTable[] = {
 		    std::numbers::pi_v<float> / 2.0f, std::numbers::pi_v<float> * 3.0f / 2.0f};
 		float destinationRotationY = destinationRotationYTable[static_cast<uint32_t>(lrDirection_)];

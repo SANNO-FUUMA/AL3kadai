@@ -38,9 +38,7 @@ public:
 private:
 	ViewProjection viewProjection_;
 	Player* target_ = nullptr;
-
 	Vector3 targetOffset_ = {0, 0, -30.0f};
-
 	Rect movableArea_ = {0, 300, 0, 300};
 	Vector3 destination_;
 	static inline const Rect targetMargin = {-9.0f, 9.0f, -5.0f, 5.0f};

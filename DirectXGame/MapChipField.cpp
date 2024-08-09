@@ -21,23 +21,22 @@ void MapChipField::ResetMapChipData() {
 }
 
 void MapChipField::LoadMapChipCsv(const std::string& filePath) {
+
 	ResetMapChipData();
 
 	std::ifstream file;
 	file.open(filePath);
 	assert(file.is_open());
-	std::stringstream mapChipCsv;
 
+	std::stringstream mapChipCsv;
 	mapChipCsv << file.rdbuf();
 	file.close();
-
 	ResetMapChipData();
 
 	std::string line;
 
 	for (uint32_t i = 0; i < kNumBlockVirtical; ++i) {
 		getline(mapChipCsv, line);
-
 
 		std::istringstream line_stream(line);
 

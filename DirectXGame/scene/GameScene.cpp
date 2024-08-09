@@ -1,23 +1,19 @@
 #include "GameScene.h"
-#include "TextureManager.h"
 #include "myMath.h"
+#include "TextureManager.h"
 #include <cassert>
 #include <cstdint>
+
 
 GameScene::GameScene() {}
 
 GameScene::~GameScene() {
 
-<<<<<<< HEAD
 	delete deathParticles_;
 	for (Enemy* enemy : enemies_) {
 		delete enemy;
 	}
 	delete player_;
-=======
-	delete modelBlock_;
-
->>>>>>> parent of c795fc8 (q)
 	for (std::vector<WorldTransform*>& worldTransformBlockLine : worldTransformBlocks_) {
 		for (WorldTransform* worldTransformBlock : worldTransformBlockLine) {
 			delete worldTransformBlock;
@@ -33,7 +29,6 @@ GameScene::~GameScene() {
 	delete mapChipField_;
 	delete cameraController;
 }
-<<<<<<< HEAD
 
 void GameScene::Initialize() {
 
@@ -90,9 +85,6 @@ void GameScene::Initialize() {
 
 	phase_ = Phase::kPlay;
 }
-=======
-	
->>>>>>> parent of c795fc8 (q)
 
 void GameScene::Update() {
 
@@ -116,8 +108,11 @@ void GameScene::Update() {
 		UpdateBlocks();
 
 		CheckAllCollisions();
-
+		break;
 	case Phase::kDeath:
+		if (deathParticles_ && deathParticles_->IsFinished()) {
+			finished_ = true;
+		}
 		worldTransformSkydome_.UpdateMatrix();
 
 		for (Enemy* enemy : enemies_) {
@@ -133,6 +128,7 @@ void GameScene::Update() {
 	}
 }
 
+
 void GameScene::Draw() {
 	// コマンドリストの取得
 	ID3D12GraphicsCommandList* commandList = dxCommon_->GetCommandList();
@@ -141,7 +137,6 @@ void GameScene::Draw() {
 	// 背景スプライト描画前処理
 	Sprite::PreDraw(commandList);
 
-<<<<<<< HEAD
 	/// <summary>
 	/// ここに背景スプライトの描画処理を追加できる
 	/// </summary>
@@ -176,13 +171,18 @@ void GameScene::Draw() {
 		player_->Draw();
 	}
 
+	//敵
 	for (Enemy* enemy : enemies_) {
 		enemy->Draw();
 	}
 
+	//パーティクル
 	if (deathParticles_) {
 		deathParticles_->Draw();
 	}
+
+
+
 
 	// 3Dオブジェクト描画後処理
 	Model::PostDraw();
@@ -282,19 +282,8 @@ void GameScene::UpdateBlocks() {
 				continue;
 
 			worldTransformBlock->UpdateMatrix();
-=======
-		for (std::vector<WorldTransform*>& worldTransformBlockLine : worldTransformBlocks_) {
-			for (WorldTransform* worldTransformBlock : worldTransformBlockLine) {
-				if (!worldTransformBlock) {
-					continue;
-					
-				}
-				worldTransformBlock->UpdateMatrix();
-			}
->>>>>>> parent of c795fc8 (q)
 		}
 	}
-<<<<<<< HEAD
 }
 
 void GameScene::CheckAllCollisions() {
@@ -323,56 +312,3 @@ void GameScene::CheckAllCollisions() {
 	}
 #pragma endregion
 }
-=======
-
-	void GameScene::Draw() {
-
-		// コマンドリストの取得
-		ID3D12GraphicsCommandList* commandList = dxCommon_->GetCommandList();
-
-#pragma region 背景スプライト描画
-		// 背景スプライト描画前処理
-		Sprite::PreDraw(commandList);
-
-		/// <summary>
-		/// ここに背景スプライトの描画処理を追加できる
-		/// </summary>
-
-		// スプライト描画後処理
-		Sprite::PostDraw();
-		// 深度バッファクリア
-		dxCommon_->ClearDepthBuffer();
-#pragma endregion
-
-#pragma region 3Dオブジェクト描画
-		// 3Dオブジェクト描画前処理
-		Model::PreDraw(commandList);
-
-		/// <summary>
-		/// ここに3Dオブジェクトの描画処理を追加できる
-		/// </summary>
-	
-		for (std::vector<WorldTransform*>& worldTransformBlockLine : worldTransformBlocks_) {
-			for (WorldTransform* worldTransformBlock : worldTransformBlockLine) {
-				modelBlock_->Draw(*worldTransformBlock, viewProjection_);
-			}
-		}
-
-		// 3Dオブジェクト描画後処理
-		Model::PostDraw();
-#pragma endregion
-
-#pragma region 前景スプライト描画
-		// 前景スプライト描画前処理
-		Sprite::PreDraw(commandList);
-
-		/// <summary>
-		/// ここに前景スプライトの描画処理を追加できる
-		/// </summary>
-
-		// スプライト描画後処理
-		Sprite::PostDraw();
-
-#pragma endregion
-	}
->>>>>>> parent of c795fc8 (q)

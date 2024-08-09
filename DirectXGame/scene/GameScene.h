@@ -47,6 +47,8 @@ public: // メンバ関数
 	/// </summary>
 	void Draw();
 
+	bool IsFinished() const { return finished_; };
+
 private: // メンバ変数
 	enum class Phase {
 		kPlay,  // ゲームプレイ
@@ -62,7 +64,6 @@ private: // メンバ変数
 	/// </summary>
 	// ビュープロジェクション
 	ViewProjection viewProjection_;
-<<<<<<< HEAD
 	// テクスチャハンドル
 	uint32_t textureHandle_ = 0;
 	// 自キャラ
@@ -87,6 +88,8 @@ private: // メンバ変数
 	std::list<Enemy*> enemies_;
 	Enemy* newEnemy_ = nullptr;
 
+	bool finished_ = false;
+
 	Phase phase_;
 
 	DeathParticles* deathParticles_ = nullptr;
@@ -103,13 +106,3 @@ private: // メンバ変数
 
 	void CheckAllCollisions();
 };
-=======
-
-	Sprite sprite_;
-	bool isDebugCameraActive_ = false;
-	DebugCamera* debugCamera_ = nullptr;
-	Matrix4x4 cameraMarix_;
-	Model* modelBlock_ = nullptr;
-	std::vector<std::vector<WorldTransform*>> worldTransformBlocks_;
-};
->>>>>>> parent of c795fc8 (q)
