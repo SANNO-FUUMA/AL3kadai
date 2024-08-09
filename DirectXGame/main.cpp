@@ -20,7 +20,11 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 	// ゲームウィンドウの作成
 	win = WinApp::GetInstance();
+<<<<<<< HEAD
 	win->CreateGameWindow(L"GC2D_07_サンノウ_フウマ_AL3");
+=======
+	win->CreateGameWindow(L"AL3_0202");
+>>>>>>> parent of c795fc8 (q)
 
 	// DirectX初期化処理
 	dxCommon = DirectXCommon::GetInstance();

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿  CameraController.cpp
   DeathParticles.cpp
   Enemy.cpp
@@ -6,5 +7,23 @@
   Skydome.cpp
   main.cpp
   myMath.cpp
+=======
+﻿  compilation object save succeeded; see C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\TerrainPS.cso
+  compilation object save succeeded; see C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\TerrainVS.cso
+  compilation object save succeeded; see C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\ObjPS.cso
+  compilation object save succeeded; see C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\ObjVS.cso
+  compilation object save succeeded; see C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\PrimitivePS.cso
+  compilation object save succeeded; see C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\PrimitiveVS.cso
+  compilation object save succeeded; see C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\ShapePS.cso
+  compilation object save succeeded; see C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\ShapeVS.cso
+  compilation object save succeeded; see C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\SpritePS.cso
+  compilation object save succeeded; see C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\SpriteVS.cso
+  ImGuiManager.cpp
+  WorldTransform.cpp
+  DirectXCommon.cpp
+  WinApp.cpp
+  main.cpp
+  MatrixMath.cpp
+>>>>>>> parent of c795fc8 (q)
   GameScene.cpp
   DirectXGame.vcxproj -> C:\Users\fuuma\OneDrive\デスクトップ\AL3kadai\Generated\Outputs\Debug\DirectXGame.exe

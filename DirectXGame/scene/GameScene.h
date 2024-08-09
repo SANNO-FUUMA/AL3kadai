@@ -62,6 +62,7 @@ private: // メンバ変数
 	/// </summary>
 	// ビュープロジェクション
 	ViewProjection viewProjection_;
+<<<<<<< HEAD
 	// テクスチャハンドル
 	uint32_t textureHandle_ = 0;
 	// 自キャラ
@@ -102,3 +103,13 @@ private: // メンバ変数
 
 	void CheckAllCollisions();
 };
+=======
+
+	Sprite sprite_;
+	bool isDebugCameraActive_ = false;
+	DebugCamera* debugCamera_ = nullptr;
+	Matrix4x4 cameraMarix_;
+	Model* modelBlock_ = nullptr;
+	std::vector<std::vector<WorldTransform*>> worldTransformBlocks_;
+};
+>>>>>>> parent of c795fc8 (q)
