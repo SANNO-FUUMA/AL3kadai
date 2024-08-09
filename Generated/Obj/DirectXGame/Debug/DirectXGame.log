@@ -1,6 +1,9 @@
 ﻿  CameraController.cpp
+  Enemy.cpp
+  MapChipField.cpp
   Player.cpp
   Skydome.cpp
+  WorldTransform (1).cpp
   main.cpp
   myMath.cpp
   GameScene.cpp

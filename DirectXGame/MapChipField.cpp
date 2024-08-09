@@ -23,7 +23,6 @@ void MapChipField::ResetMapChipData() {
 void MapChipField::LoadMapChipCsv(const std::string& filePath) {
 
 	ResetMapChipData();
-
 	std::ifstream file;
 	file.open(filePath);
 	assert(file.is_open());
