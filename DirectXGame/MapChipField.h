@@ -4,8 +4,8 @@
 #include <vector>
 
 enum class MapChipType {
-	kBlank, // 空白
-	kBlock, // ブロック
+	kBlank, 
+	kBlock, 
 };
 
 struct MapChipData {
@@ -14,7 +14,6 @@ struct MapChipData {
 
 class MapChipField {
 public:
-	// 1ブロックのサイズ
 	static inline const float kBlockWidth = 1.0f;
 	static inline const float kBlockHeight = 1.0f;
 
@@ -24,10 +23,10 @@ public:
 	};
 
 	struct Rect {
-		float left;   // 左端
-		float right;  // 右端
-		float bottom; // 下端
-		float top;    // 上端
+		float left;   
+		float right;  
+		float bottom; 
+		float top;    
 	};
 
 	void ResetMapChipData();
@@ -48,7 +47,6 @@ public:
 	Rect GetRectByIndex(uint32_t xIndex, uint32_t yIndex);
 
 private:
-	// ブロックの個数
 	static inline const uint32_t kNumBlockVirtical = 20;
 	static inline const uint32_t kNumBlockHorizontal = 100;
 

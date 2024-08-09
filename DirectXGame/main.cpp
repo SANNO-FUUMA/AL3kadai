@@ -20,11 +20,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 	// ゲームウィンドウの作成
 	win = WinApp::GetInstance();
-<<<<<<< Updated upstream
-	win->CreateGameWindow(L"AL3_0202");
-=======
-	win->CreateGameWindow(L"GC2D_04_キタムラ_ケンタ_AL3");
->>>>>>> Stashed changes
+	win->CreateGameWindow(L"GC2D_07_サンノウ_フウマ_AL3");
 
 	// DirectX初期化処理
 	dxCommon = DirectXCommon::GetInstance();
@@ -98,9 +94,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	}
 
 	// 各種解放
-	delete gameScene;
-	// 3Dモデル解放
-	Model::StaticFinalize();
+//	SafeDelete(gameScene);
 	audio->Finalize();
 	// ImGui解放
 	imguiManager->Finalize();

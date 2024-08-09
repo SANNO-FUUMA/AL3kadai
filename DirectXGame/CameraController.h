@@ -1,8 +1,5 @@
 ﻿#include "ViewProjection.h"
 
-//#include "Player.h"
-
-// 前方宣言
 class Player;
 
 /// カメラコントローラ
@@ -10,12 +7,11 @@ class Player;
 class CameraController {
 
 public:
-	// 矩形
 	struct Rect {
-		float left = 0.0f;   // 左端
-		float right = 1.0f;  // 右端
-		float bottom = 0.0f; // 下端
-		float top = 1.0f;    // 上端
+		float left = 0.0f;   
+		float right = 1.0f;  
+		float bottom = 0.0f; 
+		float top = 1.0f;    
 
 		
 
@@ -40,13 +36,11 @@ public:
 	float Lerp(float x1, float x2, float t) { return (1.0f - t) * x1 + t * x2; }
 
 private:
-	// ビュープロジェクション
 	ViewProjection viewProjection_;
 	Player* target_ = nullptr;
-	// 追従対象とカメラの座標の差（オフセット）
+
 	Vector3 targetOffset_ = {0, 0, -30.0f};
 
-	// カメラ移動範囲
 	Rect movableArea_ = {0, 300, 0, 300};
 	Vector3 destination_;
 	static inline const Rect targetMargin = {-9.0f, 9.0f, -5.0f, 5.0f};

@@ -18,7 +18,7 @@ public:
 
 	void Draw();
 
-	// ワールド座標を取得
+
 	Vector3 GetWorldPosition();
 
 	AABB GetAABB();

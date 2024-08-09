@@ -13,26 +13,23 @@ class Enemy;
 /// </summary>
 class Player {
 public:
-	// 左右
 	enum class LRDirection {
 		kRight,
 		kLeft,
 	};
 
-	// 角
 	enum Corner {
-		kRightBottom, // 右下
-		kLeftBottom,  // 左下
-		kRightTop,    // 右上
-		kLeftTop,     // 左上
+		kRightBottom, 
+		kLeftBottom,  
+		kRightTop,    
+		kLeftTop,     
 
-		kNumCorner // 要素数
+		kNumCorner 
 	};
 
 	/// <summary>
 	/// 初期化
 	/// </summary>
-	//	void Initialize(Model* model, uint32_t textureHandle, ViewProjection* viewProjection);
 	void Initialize(Model* model, ViewProjection* viewProjection, const Vector3& position);
 
 	/// <summary>
@@ -45,19 +42,17 @@ public:
 	/// </summary>
 	void Draw();
 
-	// ワールド座標を取得
 	Vector3 GetWorldPosition();
 
 	AABB GetAABB();
 
 	void OnCollision(const Enemy* enemy);
 
-	// setter
 	void SetMapChipField(MapChipField* mapChipField) { mapChipField_ = mapChipField; }
 
-	// getter
 	const WorldTransform& GetWorldTransform() const { return worldTransform_; }
 	const Vector3& GetVelocity() const { return velocity_; }
+	bool IsDead() const { return isDead_; };
 
 private:
 	static inline const float kAcceleration = 0.1f;
@@ -73,8 +68,8 @@ private:
 	static inline const float kHeight = 0.8f;
 	static inline const float kBlank = 0.04f;
 	static inline const float kGroundSearchHeight = 0.06f;
+	bool isDead_ = false;
 
-	// マップとの当たり判定情報
 	struct CollisionMapInfo {
 		bool ceiling = false;
 		bool landing = false;
