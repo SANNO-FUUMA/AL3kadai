@@ -6,7 +6,7 @@
 #include "PrimitiveDrawer.h"
 #include "TextureManager.h"
 #include "TitleScene.h"
-#include "WinApp.h"
+#include "WinApp.h"	
 
 GameScene* gameScene = nullptr;
 TitleScene* titleScene = nullptr;
